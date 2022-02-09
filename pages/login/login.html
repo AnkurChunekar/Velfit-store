@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velfit | User Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://velocity-ui.netlify.app/css/components.css"
+    />
+    <link rel="stylesheet" href="authentication.css" />
+
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar starts -->
+
+    <nav class="navigation">
+      <div class="nav-brand">
+        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+        <a href="" class="brand-name">Velfit</a>
+      </div>
+
+      <div class="input-wrapper">
+        <input
+          type="text"
+          placeholder="search for brands, products and more..."
+        />
+      </div>
+
+      <div class="nav-actions">
+        <a href="">
+          <div class="icon-container badge-container">
+            <i class="fas fa-heart icon"></i>
+            <span class="icon-badge">2</span>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="icon-container badge-container">
+            <i class="fas fa-shopping-cart icon"></i>
+            <span class="icon-badge">2</span>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends -->
+
+    <main class="main-container">
+      <!-- login starts -->
+      <form class="authentication-container">
+        <h1 class="title">LOGIN</h1>
+
+        <p class="gray-text">Please enter your email and password.</p>
+
+        <div class="input-wrapper">
+          <input type="email" placeholder="Email" />
+          <label class="input-label2 error-msg">Username not found.</label>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="password" placeholder="Password" />
+          <label class="input-label2 error-msg"
+            >Wrong Password. Try again.</label
+          >
+        </div>
+
+        <div class="flex-align-left">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+
+        <a href="" class="flex-align-left">Forgot your Password?</a>
+
+        <button type="submit" class="btn btn-primary">LOGIN</button>
+        <p>
+          Dont have an account?
+          <a href="/pages/signup/signup.html">Sign Up!</a>.
+        </p>
+
+        <a href="">Use Guest Credentials.</a>
+      </form>
+
+      <!-- login ends -->
+    </main>
+  </body>
+</html>
+
+<!-- 
+
+
+<div class="input-wrapper radio">
+  <input
+    type="checkbox"
+    placeholder="sample placeholder"
+    id="checkbox-1"
+  />
+  <label class="input-label2" 
+         for="checkbox-1">HTML</label>
+</div>
+        
+<div class="input-wrapper radio">
+  <input
+    type="checkbox"
+    placeholder="sample placeholder"
+    id="checkbox-2"
+  />
+  <label class="input-label2" 
+         for="checkbox-2">CSS</label>
+</div>
+        
+<div class="input-wrapper radio">
+  <input
+    type="checkbox"
+    placeholder="sample placeholder"
+    id="checkbox-3"
+  />
+  <label class="input-label2" 
+         for="checkbox-3">JavaScript</label>
+</div>
+
+ -->
