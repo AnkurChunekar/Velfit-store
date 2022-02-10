@@ -1,0 +1,7 @@
+.card.card-w-badge .card-icons .card-like-icon {
+  color: red;
+}
+
+.card .card-badge.card-left-badge {
+  display: none;
+}
