@@ -1,12 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velfit | Browse Products</title>
+
+    <link
+      rel="stylesheet"
+      href="https://velocity-ui.netlify.app/css/components.css"
+    />
+
+    <link rel="stylesheet" href="/css/homepage.css" />
+    <link rel="stylesheet" href="/pages/products-page/products.css" />
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar starts -->
+
+    <nav class="navigation">
+      <div class="nav-brand">
+        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+        <a href="" class="brand-name">Velfit</a>
+      </div>
+
+      <div class="nav-link">
+        <a href="/index.html">Home</a>
+        <a href="">Products</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="">
+          <span class="icon-container badge-container">
+            <i class="fas fa-search icon"></i>
+          </span>
+        </a>
+
+        <a href="/pages/login/login.html">
+          <span class="icon-container badge-container">
+            <i class="fas fa-user icon"></i>
+            <span class="icon-badge">2</span>
+          </span>
+        </a>
+
+        <a href="">
+          <span class="icon-container badge-container">
+            <i class="fas fa-heart icon"></i>
+            <span class="icon-badge">2</span>
+          </span>
+        </a>
+
+        <a href="">
+          <span class="icon-container badge-container">
+            <i class="fas fa-shopping-cart icon"></i>
+            <span class="icon-badge">2</span>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navbar starts -->
+
+    <!-- Search bar starts -->
+
+    <div id="nav-searchbar" class="input-wrapper">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          placeholder="search for products, brands and more..."
+        />
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="searchbar-bg"></div>
+    </div>
+
+    <!-- Search bar starts -->
+
+    <!-- Main content starts -->
+
+    <main class="main-grid">
+      <aside class="filters-container">
+        <!-- Header starts  -->
+
+        <header class="flex-r-center-sb">
+          <h3>Filters</h3>
+          <button class="btn btn-link">Clear</button>
+        </header>
+
+        <!-- price starts  -->
+
+        <section class="price">
+          <p class="filter-title">Price</p>
+          <div class="flex-r-center-sb">
+            <span>500</span>
+            <span>2500</span>
+            <span>5000</span>
+          </div>
+          <input type="range" />
+        </section>
+
+        <!-- Category starts -->
+
+        <section class="category">
+          <p class="filter-title">Category</p>
+          <div>
+            <input id="cardio-category" type="checkbox" />
+            <label for="cardio-category">Gym Equipments</label>
+          </div>
+          <div>
+            <input id="gym-category" type="checkbox" />
+            <label for="gym-category">Cardio Equipments</label>
+          </div>
+        </section>
+
+        <!-- Ratings starts  -->
+
+        <section class="category">
+          <div class="filter-title">Ratings</div>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="rating"
+              placeholder="sample placeholder"
+              id="four-star"
+            />
+            <label class="input-label2" for="four-star"
+              >4 stars and above</label
+            >
+          </div>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="rating"
+              placeholder="sample placeholder"
+              id="three-star"
+            />
+            <label class="input-label2" for="three-star"
+              >3 stars and above</label
+            >
+          </div>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="rating"
+              placeholder="sample placeholder"
+              id="two-star"
+            />
+            <label class="input-label2" for="two-star">2 stars and above</label>
+          </div>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="rating"
+              placeholder="sample placeholder"
+              id="one-star"
+            />
+            <label class="input-label2" for="one-star">1 stars and above</label>
+          </div>
+        </section>
+
+        <!-- Sort By starts -->
+
+        <section class="sort">
+          <p class="filter-title">Sort By</p>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="sort"
+              placeholder="sample placeholder"
+              id="low-high"
+            />
+            <label class="input-label2" for="low-high"
+              >Price - Low to High</label
+            >
+          </div>
+
+          <div class="input-wrapper radio">
+            <input
+              type="radio"
+              name="sort"
+              placeholder="sample placeholder"
+              id="high-low"
+            />
+            <label class="input-label2" for="high-low"
+              >Price - High to Low</label
+            >
+          </div>
+        </section>
+      </aside>
+
+      <section class="product-listings">
+        <!-- grid starts -->
+
+        <div class="products-grid">
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/home-workout-kit.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">Home Workout Kit</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span>Upto 60% Off
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/womens-green-app.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">Cardio Equipments</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span> Upto 50% Off
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/weighted-plates.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">Rogue Weighted Plates.</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span> Upto 20% Off
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/yoga-mat.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">Flite Yoga Mat</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span>Upto 50% Off
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/dumbell-1.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">Rogue's 5 Kg Dumbell</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span> limited Offer
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+
+          <!-- card here-->
+
+          <div class="card card-w-badge">
+            <header class="card-header">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-image"
+                  src="/images/product-img-1.webp"
+                  alt="avatar-profile-1"
+                />
+              </figure>
+              <div class="card-header-body">
+                <h4>Maya Joseph</h4>
+                <p>Sent 2 hours ago.</p>
+              </div>
+              <div class="card-badge">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-ellipsis-v icon"></i>
+                </div>
+              </div>
+            </header>
+            <section class="card-body">
+              <div class="card-image">
+                <img src="/images/barbell.webp" alt="product image" />
+              </div>
+
+              <div class="dismiss-icon">
+                <div class="card-badge">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-times icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-icons">
+                <div class="card-badge card-left-badge">
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+                </div>
+                <div class="card-badge card-like-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-comment-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-comment icon"></i>
+                  </div>
+                </div>
+                <div class="card-badge card-share-icon">
+                  <div class="icon-container badge-container">
+                    <i class="fas fa-paper-plane icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text-content">
+                <h3 class="card-title">G-Fit's Barbell</h3>
+                <p class="card-subtitle"></p>
+                <p class="card-description">
+                  <span class="strike-text"></span> Upto 50% Off
+                </p>
+              </div>
+            </section>
+            <footer class="card-actions">
+              <button class="btn btn-primary card-btn-1">Shop Now</button>
+              <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+            </footer>
+          </div>
+
+          <!-- card here-->
+
+        </div>
+
+        <!-- grid ends -->
+      </section>
+
+      <!-- New Releases ends -->
+
+
+    </main>
+
+    <!-- Main content ends -->
+  </body>
 </html>
