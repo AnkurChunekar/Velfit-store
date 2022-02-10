@@ -193,14 +193,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
   height: 25vh;
   background-color: var(--velocity-black);
 }
 
 .main-footer p {
-  margin: 2rem 1rem;
+  margin: 2rem 0.5rem;
   color: inherit;
+  text-align: center;
 }
 
 .main-footer ul {
@@ -211,7 +211,7 @@
 }
 .main-footer li {
   display: inline;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 .main-footer li a {
   color: inherit;
