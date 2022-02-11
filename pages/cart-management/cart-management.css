@@ -95,7 +95,7 @@ li.notification:hover {
 
 /* media query starts */
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1024px) {
   .cart-container {
     flex-direction: column;
     row-gap: 4rem;
