@@ -159,6 +159,10 @@
   height: 26rem;
 }
 
+.card .card-text-content .details {
+  display: none;
+}
+
 .product-listings {
   margin: 7rem auto;
   max-width: 1280px;
