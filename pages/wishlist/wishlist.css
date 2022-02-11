@@ -5,3 +5,11 @@
 .card .card-badge.card-left-badge {
   display: none;
 }
+
+.card .card-text-content .details {
+  display: block;
+}
+
+.card.card-ecom .card-like {
+  color: var(--velocity-red);
+}
