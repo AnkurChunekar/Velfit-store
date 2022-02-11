@@ -11,5 +11,13 @@
 }
 
 .card.card-ecom .card-like {
-  color: var(--velocity-red);
+  display: none;
+}
+
+.card.card-w-dismiss .card-dismiss {
+  color: var(--velocity-black);
+  background-color: var(--plain-white);
+  border-radius: var(--full-round-border-radius);
+  box-shadow: 0 0 4px var(--plain-gray);
+  padding: 0 0.5rem;
 }
