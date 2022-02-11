@@ -96,6 +96,14 @@ li.notification:hover {
 /* media query starts */
 
 @media screen and (max-width: 1024px) {
+
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
   .cart-container {
     flex-direction: column;
     row-gap: 4rem;
@@ -104,8 +112,7 @@ li.notification:hover {
   .order-box {
     align-self: center;
   }
+
 }
 
 /* media query ends */
-
-
