@@ -155,6 +155,10 @@
 
 /* Main section startsX */
 
+.card .card-image img {
+  height: 26rem;
+}
+
 .product-listings {
   margin: 7rem auto;
   max-width: 1280px;
