@@ -43,6 +43,7 @@
   .nav-actions .icon {
     padding: 0;
   }
+
 }
 
 /* Navigation ends */
@@ -161,6 +162,11 @@
 
 .card .card-text-content .details {
   display: none;
+}
+
+.card .card-actions .card-btn-1 {
+  text-decoration: none;
+  text-align: center;
 }
 
 .product-listings {

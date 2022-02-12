@@ -55,7 +55,6 @@
         </a>
 
         <a href="/pages/login/login.html">Login</a>
-
       </div>
     </nav>
 
@@ -84,7 +83,6 @@
 
     <main class="cart-container">
       <section class="card-container">
-
         <!-- card here-->
 
         <div class="card card-horizontal">
@@ -121,7 +119,10 @@
               </p>
 
               <div class="ecom-qty">
-                Quantity: <input type="number" min="1" max="50" />
+                Quantity: 
+                <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                <span class="qty-num">3</span>
+                <button class="qty-btn"><i class="fas fa-plus"></i></button>
               </div>
 
               <p class="flexible-txt details">
@@ -187,7 +188,10 @@
               </p>
 
               <div class="ecom-qty">
-                Quantity: <input type="number" min="1" max="50" />
+                Quantity: 
+                <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                <span class="qty-num">3</span>
+                <button class="qty-btn"><i class="fas fa-plus"></i></button>
               </div>
 
               <p class="flexible-txt details">
@@ -216,8 +220,6 @@
         </div>
 
         <!-- card here-->
-
-
       </section>
 
       <section class="order-box">
@@ -256,9 +258,7 @@
         </div>
       </section>
     </main>
-  
-<script src="/js/homepage.js"></script>
-    
-  </body>
 
+    <script src="/js/homepage.js"></script>
+  </body>
 </html>
