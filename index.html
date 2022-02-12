@@ -32,18 +32,11 @@
       </div>
 
       <div class="nav-actions">
-        <a href="">
-          <span class="icon-container badge-container">
-            <i class="fas fa-search icon"></i>
-          </span>
-        </a>
-
-        <a href="/pages/login/login.html">
-          <span class="icon-container badge-container">
-            <i class="fas fa-user icon"></i>
-            <span class="icon-badge">2</span>
-          </span>
-        </a>
+        <a>
+        <span class="icon-container badge-container">
+          <i id="nav-search-icon" class="fas fa-search icon"></i>
+        </span>
+      </a>
 
         <a href="/pages/wishlist/wishlist.html">
           <span class="icon-container badge-container">
@@ -58,6 +51,8 @@
             <span class="icon-badge">2</span>
           </span>
         </a>
+
+        <a href="/pages/login/login.html">Login</a>
       </div>
     </nav>
 
@@ -67,17 +62,15 @@
 
     <div id="nav-searchbar" class="input-wrapper">
       <div class="search-box">
-      <i class="fas fa-search"></i>
-      <input
-        type="text"
-        placeholder="search for products, brands and more..."
-      />
-      <i class="fas fa-times"></i>
-    </div>
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          placeholder="search for products, brands and more..."
+        />
+        <i id="nav-close-icon" class="fas fa-times"></i>
+      </div>
 
-    <div class="searchbar-bg">
-
-    </div>
+      <div id="nav-searchbar-bg" class="searchbar-bg"></div>
     </div>
 
     <!-- Search bar starts -->
@@ -111,7 +104,7 @@
 
       <div class="banner-content">
         <h1 class="title">Products That You Can Trust.</h1>
-        <a href="" class="btn btn-primary">Shop Now</a>
+        <a href="/pages/products-page/products.html" class="btn btn-primary">Shop Now</a>
       </div>
     </header>
 
@@ -128,66 +121,65 @@
         <!-- grid starts -->
 
         <div class="products-grid">
-
           <!-- card here-->
 
-            <div class="card single-btn">
-              <header class="card-image">
-                <img src="/images/home-workout-kit.webp" alt="product image" />
-              </header>
-         
-              <section class="card-body">
-                <div class="card-badge card-dismiss">
-                  <div class="icon-container badge-container">
-                    <i class="fas fa-times icon"></i>
-                  </div>
-                </div>
-         
-                <div class="card-badge card-like">
-                  <div class="icon-container badge-container">
-                    <i class="far fa-heart icon"></i>
-                  </div>
-                </div>
-         
-                <div class="card-badge left-badge">
-                  <div class="badge-container tag tag-danger">
-                    <span class="icon-badge">50% Off</span>
-                  </div>
-                </div>
-         
-                <div class="card-overlay">Out of Stock</div>
-         
-                <div class="card-text-content">
-                  <h1 class="card-title">Home Workout</h1>
-         
-                  <p class="flexible-txt subtitle">Upto 50% Off.</p>
-         
-                  <div class="ecom-qty">
-                    Quantity: <input type="number" min="1" max="50" />
-                  </div>
-         
-                  <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749</p>
-                           
-                  <div class="rating sm">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <span class="rating-info">(4)</span>
-                </div>
-                           
-                </div>
-         
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Shop Now</button>
-                  <button class="btn btn-secondary card-btn-2">Add to Cart</button>
-                </footer>
-         
-              </section>
-            </div>
+          <div class="card single-btn">
+            <header class="card-image">
+              <img src="/images/home-workout-kit.webp" alt="product image" />
+            </header>
 
+            <section class="card-body">
+              <div class="card-badge card-dismiss">
+                <div class="icon-container badge-container">
+                  <i class="fas fa-times icon"></i>
+                </div>
+              </div>
+
+              <div class="card-badge card-like">
+                <div class="icon-container badge-container">
+                  <i class="far fa-heart icon"></i>
+                </div>
+              </div>
+
+              <div class="card-badge left-badge">
+                <div class="badge-container tag tag-danger">
+                  <span class="icon-badge">50% Off</span>
+                </div>
+              </div>
+
+              <div class="card-overlay">Out of Stock</div>
+
+              <div class="card-text-content">
+                <h1 class="card-title">Home Workout</h1>
+
+                <p class="flexible-txt subtitle">Upto 50% Off.</p>
+
+                <div class="ecom-qty">
+                  Quantity: <input type="number" min="1" max="50" />
+                </div>
+
+                <p class="flexible-txt details">
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
+                <div class="rating sm">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="rating-info">(4)</span>
+                </div>
+              </div>
+
+              <footer class="card-actions">
+                <button href="/pages/products-page/products.html" class="btn btn-primary card-btn-1">Shop Now</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
+              </footer>
+            </section>
+          </div>
 
           <!-- card here-->
 
@@ -197,40 +189,41 @@
             <header class="card-image">
               <img src="/images/womens-green-app.webp" alt="product image" />
             </header>
-       
+
             <section class="card-body">
               <div class="card-badge card-dismiss">
                 <div class="icon-container badge-container">
                   <i class="fas fa-times icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge card-like">
                 <div class="icon-container badge-container">
                   <i class="far fa-heart icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge left-badge">
                 <div class="badge-container tag tag-danger">
                   <span class="icon-badge">50% Off</span>
                 </div>
               </div>
-       
+
               <div class="card-overlay">Out of Stock</div>
-       
+
               <div class="card-text-content">
                 <h1 class="card-title">Cardio Equipments</h1>
-       
+
                 <p class="flexible-txt subtitle">20% Off</p>
-       
+
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
+
                 <p class="flexible-txt details">
-                <span class="strike-text gray-text">$1599</span> $749</p>
-                         
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -238,15 +231,15 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="rating-info">(4)</span>
+                </div>
               </div>
-                         
-              </div>
-       
+
               <footer class="card-actions">
                 <button class="btn btn-primary card-btn-1">Shop Now</button>
-                <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
               </footer>
-       
             </section>
           </div>
 
@@ -258,40 +251,41 @@
             <header class="card-image">
               <img src="/images/weighted-plates.webp" alt="product image" />
             </header>
-       
+
             <section class="card-body">
               <div class="card-badge card-dismiss">
                 <div class="icon-container badge-container">
                   <i class="fas fa-times icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge card-like">
                 <div class="icon-container badge-container">
                   <i class="far fa-heart icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge left-badge">
                 <div class="badge-container tag tag-danger">
                   <span class="icon-badge">50% Off</span>
                 </div>
               </div>
-       
+
               <div class="card-overlay">Out of Stock</div>
-       
+
               <div class="card-text-content">
                 <h1 class="card-title">Gym Equipments</h1>
-       
+
                 <p class="flexible-txt subtitle">50% Off</p>
-       
+
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
+
                 <p class="flexible-txt details">
-                <span class="strike-text gray-text">$1599</span> $749</p>
-                         
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -299,15 +293,15 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="rating-info">(4)</span>
+                </div>
               </div>
-                         
-              </div>
-       
+
               <footer class="card-actions">
                 <button class="btn btn-primary card-btn-1">Shop Now</button>
-                <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
               </footer>
-       
             </section>
           </div>
 
@@ -335,40 +329,43 @@
             <header class="card-image">
               <img src="/images/yoga-mat.webp" alt="product image" />
             </header>
-       
+
             <section class="card-body">
               <div class="card-badge card-dismiss">
                 <div class="icon-container badge-container">
                   <i class="fas fa-times icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge card-like">
                 <div class="icon-container badge-container">
                   <i class="far fa-heart icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge left-badge">
                 <div class="badge-container tag tag-danger">
                   <span class="icon-badge">50% Off</span>
                 </div>
               </div>
-       
+
               <div class="card-overlay">Out of Stock</div>
-       
+
               <div class="card-text-content">
                 <h1 class="card-title">Yoga Mat</h1>
-       
-                <p class="flexible-txt subtitle"><span class="strike-text gray-text">$1599</span> $749</p></p>
-       
+
+                <p class="flexible-txt subtitle">
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
+
                 <p class="flexible-txt details">
-                <span class="strike-text gray-text">$1599</span> $749</p>
-                         
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -376,15 +373,15 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="rating-info">(4)</span>
+                </div>
               </div>
-                         
-              </div>
-       
+
               <footer class="card-actions">
                 <button class="btn btn-primary card-btn-1">Shop Now</button>
-                <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
               </footer>
-       
             </section>
           </div>
 
@@ -396,40 +393,43 @@
             <header class="card-image">
               <img src="/images/dumbell-1.webp" alt="product image" />
             </header>
-       
+
             <section class="card-body">
               <div class="card-badge card-dismiss">
                 <div class="icon-container badge-container">
                   <i class="fas fa-times icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge card-like">
                 <div class="icon-container badge-container">
                   <i class="far fa-heart icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge left-badge">
                 <div class="badge-container tag tag-danger">
                   <span class="icon-badge">50% Off</span>
                 </div>
               </div>
-       
+
               <div class="card-overlay">Out of Stock</div>
-       
+
               <div class="card-text-content">
                 <h1 class="card-title">5 Kg Dumbells</h1>
-       
-                <p class="flexible-txt subtitle"><span class="strike-text gray-text">$5999</span> $4749</p></p>
-       
+
+                <p class="flexible-txt subtitle">
+                  <span class="strike-text gray-text">$5999</span> $4749
+                </p>
+
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
+
                 <p class="flexible-txt details">
-                <span class="strike-text gray-text">$1599</span> $749</p>
-                         
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -437,15 +437,15 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="rating-info">(4)</span>
+                </div>
               </div>
-                         
-              </div>
-       
+
               <footer class="card-actions">
                 <button class="btn btn-primary card-btn-1">Shop Now</button>
-                <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
               </footer>
-       
             </section>
           </div>
           <!-- card here-->
@@ -456,40 +456,43 @@
             <header class="card-image">
               <img src="/images/barbell.webp" alt="product image" />
             </header>
-       
+
             <section class="card-body">
               <div class="card-badge card-dismiss">
                 <div class="icon-container badge-container">
                   <i class="fas fa-times icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge card-like">
                 <div class="icon-container badge-container">
                   <i class="far fa-heart icon"></i>
                 </div>
               </div>
-       
+
               <div class="card-badge left-badge">
                 <div class="badge-container tag tag-danger">
                   <span class="icon-badge">New</span>
                 </div>
               </div>
-       
+
               <div class="card-overlay">Out of Stock</div>
-       
+
               <div class="card-text-content">
                 <h1 class="card-title">G-Fit's Barbell</h1>
-       
-                <p class="flexible-txt subtitle"><span class="strike-text gray-text">$3599</span> $2599</p></p>
-       
+
+                <p class="flexible-txt subtitle">
+                  <span class="strike-text gray-text">$3599</span> $2599
+                </p>
+
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
+
                 <p class="flexible-txt details">
-                <span class="strike-text gray-text">$1599</span> $749</p>
-                         
+                  <span class="strike-text gray-text">$1599</span> $749
+                </p>
+
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -497,15 +500,15 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <span class="rating-info">(4)</span>
+                </div>
               </div>
-                         
-              </div>
-       
+
               <footer class="card-actions">
                 <button class="btn btn-primary card-btn-1">Shop Now</button>
-                <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                <button class="btn btn-secondary card-btn-2">
+                  Add to Cart
+                </button>
               </footer>
-       
             </section>
           </div>
           <!-- card here-->
@@ -517,51 +520,51 @@
       <!-- Customers Favorites ends -->
     </main>
 
-<!-- Footer starts -->
+    <!-- Footer starts -->
 
-<footer class="main-footer">
-  <p  class="">
-    <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
-    Reserved
-  </p>
-  <ul>
-    <li>
-      <a
-        class="footer-link"
-        href="https://ankurchunekar.netlify.app/"
-        target="_blank"
-        ><i class="fas fa-home"></i
-      ></a>
-    </li>
-    <li>
-      <a
-        class="footer-link"
-        href="https://github.com/AnkurChunekar"
-        target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-    </li>
-    <li>
-      <a
-        class="footer-link"
-        href="https://twitter.com/ankur_chunekar"
-        target="_blank"
-        ><i class="fab fa-twitter"></i
-      ></a>
-    </li>
-    <li>
-      <a
-        class="footer-link"
-        href="https://www.linkedin.com/in/ankurchunekar"
-        target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-    </li>
+    <footer class="main-footer">
+      <p class="">
+        <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+        Reserved
+      </p>
+      <ul>
+        <li>
+          <a
+            class="footer-link"
+            href="https://ankurchunekar.netlify.app/"
+            target="_blank"
+            ><i class="fas fa-home"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://github.com/AnkurChunekar"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://twitter.com/ankur_chunekar"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/ankurchunekar"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
 
-  </ul>
-</footer>
+    <!-- Footer Ends -->
 
-
-<!-- Footer Ends -->
-</body>
+    <script src="/js/homepage.js"></script>
+  </body>
 </html>

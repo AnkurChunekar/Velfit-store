@@ -34,16 +34,9 @@
         </div>
   
         <div class="nav-actions">
-          <a href="">
+          <a>
             <span class="icon-container badge-container">
-              <i class="fas fa-search icon"></i>
-            </span>
-          </a>
-  
-          <a href="/pages/login/login.html">
-            <span class="icon-container badge-container">
-              <i class="fas fa-user icon"></i>
-              <span class="icon-badge">2</span>
+              <i id="nav-search-icon" class="fas fa-search icon"></i>
             </span>
           </a>
   
@@ -60,29 +53,29 @@
               <span class="icon-badge">2</span>
             </span>
           </a>
+
+          <a href="/pages/login/login.html">Login</a>
         </div>
       </nav>
   
       <!-- Navbar starts -->
   
-      <!-- Search bar starts -->
-  
-      <div id="nav-searchbar" class="input-wrapper">
-        <div class="search-box">
+    <!-- Search bar starts -->
+
+    <div id="nav-searchbar" class="input-wrapper">
+      <div class="search-box">
         <i class="fas fa-search"></i>
         <input
           type="text"
           placeholder="search for products, brands and more..."
         />
-        <i class="fas fa-times"></i>
+        <i id="nav-close-icon" class="fas fa-times"></i>
       </div>
-  
-      <div class="searchbar-bg">
-  
-      </div>
-      </div>
-  
-      <!-- Search bar starts -->
+
+      <div id="nav-searchbar-bg" class="searchbar-bg"></div>
+    </div>
+
+    <!-- Search bar starts -->
 
 
 
@@ -286,6 +279,8 @@
 
         <!-- grid ends -->
       </section>
+
+<script src="/js/homepage.js"></script>
 
 </body>
 </html>

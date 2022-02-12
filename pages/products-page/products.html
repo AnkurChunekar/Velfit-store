@@ -33,16 +33,9 @@
       </div>
 
       <div class="nav-actions">
-        <a href="">
+        <a>
           <span class="icon-container badge-container">
-            <i class="fas fa-search icon"></i>
-          </span>
-        </a>
-
-        <a href="/pages/login/login.html">
-          <span class="icon-container badge-container">
-            <i class="fas fa-user icon"></i>
-            <span class="icon-badge">2</span>
+            <i id="nav-search-icon" class="fas fa-search icon"></i>
           </span>
         </a>
 
@@ -59,6 +52,8 @@
             <span class="icon-badge">2</span>
           </span>
         </a>
+
+        <a href="/pages/login/login.html">Login</a>
       </div>
     </nav>
 
@@ -73,10 +68,10 @@
           type="text"
           placeholder="search for products, brands and more..."
         />
-        <i class="fas fa-times"></i>
+        <i id="nav-close-icon" class="fas fa-times"></i>
       </div>
 
-      <div class="searchbar-bg"></div>
+      <div id="nav-searchbar-bg" class="searchbar-bg"></div>
     </div>
 
     <!-- Search bar starts -->
@@ -200,11 +195,9 @@
       </aside>
 
       <section class="product-listings">
-
         <!-- grid starts -->
 
         <div class="products-grid">
-
           <!-- card here-->
 
           <div class="card card-ecom single-btn">
@@ -236,7 +229,9 @@
               <div class="card-text-content">
                 <h1 class="card-title">Home Workout Kit</h1>
 
-                <p class="flexible-txt subtitle">Find great equipments on velfit.</p>
+                <p class="flexible-txt subtitle">
+                  Find great equipments on velfit.
+                </p>
 
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
@@ -523,5 +518,7 @@
     </main>
 
     <!-- Main content ends -->
+
+    <script src="/js/homepage.js"></script>
   </body>
 </html>
