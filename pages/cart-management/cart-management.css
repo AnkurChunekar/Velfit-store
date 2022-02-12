@@ -35,6 +35,15 @@ body {
   margin: 1rem 0;
 }
 
+.card .ecom-qty span {
+  margin: 0 0.5rem;
+}
+
+.card .ecom-qty .qty-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--full-round-border-radius);
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -96,15 +105,12 @@ li.notification:hover {
 /* media query starts */
 
 @media screen and (max-width: 1024px) {
-
   html {
     font-size: 50%;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
-
   .cart-container {
     flex-direction: column;
     row-gap: 4rem;
@@ -113,7 +119,6 @@ li.notification:hover {
   .order-box {
     align-self: center;
   }
-
 }
 
 /* media query ends */
