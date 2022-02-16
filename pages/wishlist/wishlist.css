@@ -15,9 +15,9 @@
 }
 
 .card.card-w-dismiss .card-dismiss {
-  color: var(--velocity-black);
+  color: var(--dark-color);
   background-color: var(--plain-white);
-  border-radius: var(--full-round-border-radius);
+  border-radius: var(--round-radius);
   box-shadow: 0 0 4px var(--plain-gray);
   padding: 0 0.5rem;
 }

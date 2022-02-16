@@ -30,19 +30,11 @@ body {
   background-color: var(--plain-white);
 }
 
-.card.card-horizontal .rating,
+ .card.card-horizontal .rating,
 .card.card-horizontal .ecom-qty {
   margin: 1rem 0;
 }
 
-.card .ecom-qty span {
-  margin: 0 0.5rem;
-}
-
-.card .ecom-qty .qty-btn {
-  padding: 0.4rem 0.6rem;
-  border-radius: var(--full-round-border-radius);
-}
 
 .card-container {
   display: flex;
@@ -118,6 +110,7 @@ li.notification:hover {
 
   .order-box {
     align-self: center;
+    max-width: 55rem;
   }
 }
 
