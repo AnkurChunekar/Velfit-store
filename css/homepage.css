@@ -196,6 +196,10 @@
 .card {
   border-radius: 0;
 }
+
+.card:hover {
+  transform: scale(1.02);
+}
 .card .card-image img {
   height: 26rem;
   border-radius: 0;
