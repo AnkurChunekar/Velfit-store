@@ -50,17 +50,13 @@ main .product-listings {
 }
 
 .card .card-text-content .details {
-  display: block;
-  font-size: 1.8rem;
-}
-
-.card .card-text-content .subtitle {
   display: none;
 }
+
 /* filter starts */
 
 .filters-container {
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
 }
 
 .filter-title {
@@ -70,16 +66,13 @@ main .product-listings {
 }
 
 .filters-container section {
-  margin: 3.5rem 0;
-}
-
-.filters-container section div {
-  margin: 1.5rem 0;
+  margin: 3rem 0;
 }
 
 section.price input[type="range"] {
   width: 100%;
   cursor: pointer;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 860px) {
