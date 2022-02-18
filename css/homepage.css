@@ -1,3 +1,4 @@
+
 /* Navigation starts */
 
 .navigation {
@@ -43,7 +44,6 @@
   .nav-actions .icon {
     padding: 0;
   }
-
 }
 
 /* Navigation ends */
@@ -71,7 +71,7 @@
 }
 
 #nav-searchbar .searchbar-bg {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 86%;
 }
 
@@ -156,6 +156,48 @@
 
 /* Main section startsX */
 
+/* Category */
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 7rem auto;
+}
+
+.category {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.overlay-text {
+  color: var(--plain-white);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.overlay-text:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.45s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .category-section {
+    flex-direction: column;
+  }
+}
+
 /* Cards */
 
 .card {
@@ -179,6 +221,11 @@
   text-align: center;
 }
 
+.card .flexible-txt.subtitle {
+  font-size: 1.7rem;
+  color: var(--red-color);
+}
+
 .product-listings {
   margin: 7rem auto;
   max-width: 1280px;
@@ -195,6 +242,7 @@
 }
 
 /* Products Grid */
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
