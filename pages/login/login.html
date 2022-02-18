@@ -18,19 +18,13 @@
     ></script>
   </head>
   <body>
+    
     <!-- Navbar starts -->
 
     <nav class="navigation">
       <div class="nav-brand">
         <i class="fas fa-bars menu-icon" id="menu-icon"></i>
         <a href="" class="brand-name">Velfit</a>
-      </div>
-
-      <div class="input-wrapper">
-        <input
-          type="text"
-          placeholder="search for brands, products and more..."
-        />
       </div>
 
       <div class="nav-actions">
@@ -53,33 +47,49 @@
     <!-- Navbar Ends -->
 
     <main class="main-container">
+
       <!-- login starts -->
+
       <form class="authentication-container">
-        <h1 class="title">LOGIN</h1>
+        <h1 class="title sm-margin">LOGIN</h1>
 
-        <p class="gray-text">Please enter your email and password.</p>
+        <p class="gray-text sm-margin">Please enter your email and password.</p>
 
-        <div class="input-wrapper">
-          <input type="email" placeholder="Email" />
-          <label class="input-label2 error-msg">Username not found.</label>
-        </div>
-
-        <div class="input-wrapper">
-          <input type="password" placeholder="Password" />
-          <label class="input-label2 error-msg"
-            >Wrong Password. Try again.</label
+        <div class="input-wrapper validation">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email"
+            class="success-input"
+          />
+          <label class="success-msg"
+            ><i class="fa-solid fa-circle-check"></i> Success! Email entered is
+            correct.</label
           >
         </div>
 
-        <div class="flex-align-left">
-          <input type="checkbox" id="remember-me" />
-          <label for="remember-me">Remember me</label>
+        <div class="input-wrapper validation">
+          <input
+            id="password"
+            class="error-input"
+            type="password"
+            placeholder="Password"
+          />
+          <label class="error-msg">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Wrong Password. Try again.</label
+          >
         </div>
 
-        <a href="" class="flex-align-left">Forgot your Password?</a>
+        <div class="input-wrapper checkbox flex-align-left">
+          <input type="checkbox" id="checkbox-1" />
+          <label for="checkbox-1">Remember Me</label>
+        </div>
 
-        <button type="submit" class="btn btn-primary">LOGIN</button>
-        <p>
+        <a href="" class="flex-align-left sm-margin">Forgot your Password?</a>
+
+        <button type="submit" class="btn btn-primary sm-margin">LOGIN</button>
+        <p class="sm-margin">
           Dont have an account?
           <a href="/pages/signup/signup.html">Sign Up!</a>.
         </p>
@@ -88,41 +98,7 @@
       </form>
 
       <!-- login ends -->
+
     </main>
   </body>
 </html>
-
-<!-- 
-
-
-<div class="input-wrapper radio">
-  <input
-    type="checkbox"
-    placeholder="sample placeholder"
-    id="checkbox-1"
-  />
-  <label class="input-label2" 
-         for="checkbox-1">HTML</label>
-</div>
-        
-<div class="input-wrapper radio">
-  <input
-    type="checkbox"
-    placeholder="sample placeholder"
-    id="checkbox-2"
-  />
-  <label class="input-label2" 
-         for="checkbox-2">CSS</label>
-</div>
-        
-<div class="input-wrapper radio">
-  <input
-    type="checkbox"
-    placeholder="sample placeholder"
-    id="checkbox-3"
-  />
-  <label class="input-label2" 
-         for="checkbox-3">JavaScript</label>
-</div>
-
- -->

@@ -10,20 +10,15 @@
       rel="stylesheet"
       href="https://velocity-ui.netlify.app/css/components.css"
     />
-    <link
-      rel="stylesheet"
-      href="/pages/login/authentication.css"
-    />
+    <link rel="stylesheet" href="/pages/login/authentication.css" />
 
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
-
   </head>
   <body>
-
-<!-- Navbar starts -->
+    <!-- Navbar starts -->
 
     <nav class="navigation">
       <div class="nav-brand">
@@ -31,12 +26,7 @@
         <a href="" class="brand-name">Velfit</a>
       </div>
 
-      <div class="input-wrapper">
-        <input type="text" placeholder="search for products, brands and more..." />
-      </div>
-
       <div class="nav-actions">
-
         <a href="">
           <div class="icon-container badge-container">
             <i class="fas fa-heart icon"></i>
@@ -51,62 +41,76 @@
           </div>
         </a>
       </div>
-
     </nav>
 
-<!-- Navbar Ends -->
+    <!-- Navbar Ends -->
 
-<main class="main-container">
-    
-    <!-- login starts -->
-    
-<form class="authentication-container">
+    <main class="main-container">
+      <!-- login starts -->
 
-<h1 class="title">Signup</h1>
+      <form class="authentication-container">
+        <h1 class="title sm-margin">Signup</h1>
 
-<p class="gray-text">Please fill valid information below.</p>
+        <p class="gray-text sm-margin">Please fill valid information below.</p>
 
-  <div class="input-wrapper">
-    <input type="text" placeholder="Name" />
-    <label class="input-label2 error-msg">Username not found.</label>
-  </div>
+        <div class="input-wrapper">
 
-  <div class="input-wrapper">
-    <input type="email" placeholder="Email" />
-    <label class="input-label2 error-msg">Username not found.</label>
-  </div>
-          
-  <div class="input-wrapper">
-    <input type="password" placeholder="Password" />
-    <label class="input-label2 error-msg">Wrong Password. Try again.</label>
-  </div>
-          
-  <div class="input-wrapper">
-    <input type="password" placeholder="Confirm Password" />
-    <label class="input-label2 error-msg">Wrong Password. Try again.</label>
-    <i></i>
-  </div>
+          <input type="text" id="name" placeholder="Name" />
+        </div>
 
-  <div class="flex-align-left">
-    <input type="checkbox" id="terms-conditions" />
-    <label for="terms-conditions">I accept all Terms & Conditions</label>
-  </div>
+        <div class="input-wrapper validation">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email"
+            class="success-input"
+          />
+          <label class="success-msg"
+            ><i class="fa-solid fa-circle-check"></i> Success! Email entered is
+            correct.</label
+          >
+        </div>
 
-  <button type="submit" class="btn btn-primary">SIGN IN</button>
-  <p>Already a valid user? <a href="/pages/login/login.html">Login!</a>.</p>
+        <div class="input-wrapper validation">
+          <input
+            id="password"
+            class="error-input"
+            type="password"
+            placeholder="Password"
+          />
+          <label class="error-msg">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Wrong Password. Try again.</label
+          >
+        </div>
 
-  <span>Use <a href="">Guest Credentials</a>.</span>
+        <div class="input-wrapper validation">
+          <input
+            id="confirm-password"
+            class="error-input"
+            type="password"
+            placeholder="Confirm Password"
+          />
+          <label class="error-msg">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Wrong Password. Try again.</label
+          >
+        </div>
 
+        <div class="input-wrapper checkbox flex-align-left">
+          <input type="checkbox" id="t-and-c" />
+          <label for="t-and-c">I accept all Terms & Conditions</label>
+        </div>
 
+        <button type="submit" class="btn btn-primary sm-margin">SIGN IN</button>
+        <p class="sm-margin">
+          Already a valid user? <a href="/pages/login/login.html">Login!</a>.
+        </p>
 
-</form>
+        <span>Use <a href="">Guest Credentials</a>.</span>
+      </form>
 
-<!-- login ends -->
-
-
-</main>
-
+      <!-- login ends -->
+    </main>
   </body>
 </html>
-
-
