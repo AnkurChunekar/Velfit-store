@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/pages/login/authentication.css" />
 
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -22,24 +22,36 @@
 
     <nav class="navigation">
       <div class="nav-brand">
-        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
-        <a href="" class="brand-name">Velfit</a>
+        <i class="fas fa-bars ham-icon" id="ham-icon"></i>
+        <a href="/index.html" class="brand-name">Velfit</a>
+      </div>
+
+      <div class="navigation-ham-menu" id="navigation-ham-menu">
+        <i class="fas fa-times" id="ham-close-icon"></i>
+        <a href="">Home</a>
+        <a href="">Products</a>
       </div>
 
       <div class="nav-actions">
-        <a href="">
-          <div class="icon-container badge-container">
-            <i class="fas fa-heart icon"></i>
-            <span class="icon-badge">2</span>
-          </div>
+        <a>
+          <span class="icon-container badge-container">
+            <i id="nav-search-icon" class="fas fa-search icon"></i>
+          </span>
         </a>
 
-        <a href="">
-          <div class="icon-container badge-container">
-            <i class="fas fa-shopping-cart icon"></i>
-            <span class="icon-badge">2</span>
-          </div>
+        <a href="/pages/wishlist/wishlist.html">
+          <span class="icon-container badge-container">
+            <i class="fas fa-heart icon"></i>
+          </span>
         </a>
+
+        <a href="/pages/cart-management/cart-management.html">
+          <span class="icon-container badge-container">
+            <i class="fas fa-shopping-cart icon"></i>
+          </span>
+        </a>
+
+        <a href="/pages/login/login.html">Login</a>
       </div>
     </nav>
 

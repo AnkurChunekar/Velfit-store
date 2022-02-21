@@ -1,4 +1,5 @@
 /* Flex classes */
+
 .flex-row-center2 {
   display: flex;
   justify-content: center;
@@ -11,7 +12,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
   box-shadow: 0 1px 5px var(--plain-gray);
 }
 
@@ -32,8 +33,17 @@
   color: var(--dark-color);
 }
 
-.nav-actions a {
-  padding: 0.8rem 0.7rem;
+.navigation .navigation-ham-menu {
+  position: fixed;
+  box-shadow: 2px 0 5px var(--plain-gray);
+  max-width: 300px;
+  width: 100%;
+  z-index: 100;
+  row-gap: 3rem;
+}
+
+.navigation-ham-menu a:hover {
+  color: var(--primary-color);
 }
 
 .nav-actions .icon-badge {
@@ -117,7 +127,7 @@
 }
 
 .banner-content .title {
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
 }
 
@@ -129,6 +139,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
   .banner-content .title {
     font-size: 5rem;
   }
@@ -193,24 +207,18 @@
 
 /* Cards */
 
-.card {
+.card,
+.card .card-actions .btn,
+.card .card-image img {
   border-radius: 0;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1);
 }
+
 .card .card-image img {
   height: 26rem;
-  border-radius: 0;
-}
-
-.card .card-actions .btn {
-  border-radius: 0;
-}
-
-.card .card-text-content .details {
-  display: none;
 }
 
 .card .card-actions .card-btn-1 {
@@ -241,10 +249,6 @@
 /* Products Grid */
 
 .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -283,7 +287,6 @@
 }
 .main-footer li a {
   color: inherit;
-  font-size: 1.8rem;
   text-decoration: none;
 }
 .main-footer li a:hover {

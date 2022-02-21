@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/homepage.css" />
     <link rel="stylesheet" href="/pages/products-page/products.css" />
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -23,13 +23,17 @@
 
     <nav class="navigation">
       <div class="nav-brand">
-        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+        <i class="fas fa-bars ham-icon" id="ham-icon"></i>
         <a href="/index.html" class="brand-name">Velfit</a>
       </div>
 
-      <div class="nav-link">
+      <div class="navigation-ham-menu" id="navigation-ham-menu">
+        <i class="fas fa-times" id="ham-close-icon"></i>
         <a href="/index.html">Home</a>
-        <a href="">Products</a>
+        <a href="/pages/products-page/products.html">Products</a>
+        <a href="/pages/wishlist/wishlist.html">Wishlist</a>
+        <a href="/pages/cart-management/cart-management.html">Orders</a>
+        <a href="/pages/login/login.html">Logout</a>
       </div>
 
       <div class="nav-actions">
@@ -53,7 +57,7 @@
           </span>
         </a>
 
-        <a href="/pages/login/login.html">Login</a>
+        <a href="/pages/login/login.html">Logout</a>
       </div>
     </nav>
 
@@ -91,13 +95,38 @@
 
         <section class="price">
           <p class="filter-title">Price</p>
-          <div class="flex-r-center-sb">
+          <!-- <div class="flex-r-center-sb">
             <span>500</span>
             <span>2500</span>
             <span>5000</span>
           </div>
-          <input type="range" />
+          <input type="range" /> -->
+
+          <div class="slider-container">
+            <div class="slider-endpoints">
+              <span class="endpoint">0</span>
+              <span class="endpoint">5000</span>
+            </div>
+            <input type="range" min="0" max="100" value="0" id="slider" class="slider"/>
+            <p class="value">Value: <span id="slider-value"></span></p>
+          </div> 
+
         </section>
+
+<!-- 
+
+  <div class="slider-container">
+  <div class="slider-endpoints">
+    <span class="endpoint">0</span>
+    <span class="endpoint">5000</span>
+  </div>
+  <input type="range" min="0" max="100" value="0" id="slider" class="slider"/>
+  <p class="value">Value: <span id="slider-value"></span></p>
+</div> 
+
+ -->
+
+
 
         <!-- Category starts -->
 
@@ -195,7 +224,7 @@
       <section class="product-listings">
         <!-- grid starts -->
 
-        <div class="products-grid">
+        <div class="grid auto-fit products-grid">
           <!-- card here-->
 
           <div class="card card-ecom single-btn">
@@ -235,9 +264,7 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
+                 
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -297,9 +324,7 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
+                 
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -359,9 +384,7 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
+                 
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -421,9 +444,7 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
+                 
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -483,9 +504,7 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
+                 
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -518,5 +537,8 @@
     <!-- Main content ends -->
 
     <script src="/js/homepage.js"></script>
+    <script src="https://velocity-ui.netlify.app/components/navigation/navigation.js"></script>
+    <script src="https://velocity-ui.netlify.app/components/slider/slider.js"></script>
+
   </body>
 </html>

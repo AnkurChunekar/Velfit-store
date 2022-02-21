@@ -23,40 +23,44 @@
     <!-- Navbar starts -->
 
     <nav class="navigation">
-        <div class="nav-brand">
-          <i class="fas fa-bars menu-icon" id="menu-icon"></i>
-          <a href="" class="brand-name">Velfit</a>
-        </div>
-  
-        <div class="nav-link">
-          <a href="/index.html">Home</a>
-          <a href="/pages/products-page/products.html">Products</a>
-        </div>
-  
-        <div class="nav-actions">
-          <a>
-            <span class="icon-container badge-container">
-              <i id="nav-search-icon" class="fas fa-search icon"></i>
-            </span>
-          </a>
-  
-          <a href="">
-            <span class="icon-container badge-container">
-              <i class="fas fa-heart icon"></i>
-              <span class="icon-badge">2</span>
-            </span>
-          </a>
-  
-          <a href="/pages/cart-management/cart-management.html">
-            <span class="icon-container badge-container">
-              <i class="fas fa-shopping-cart icon"></i>
-              <span class="icon-badge">2</span>
-            </span>
-          </a>
+      <div class="nav-brand">
+        <i class="fas fa-bars ham-icon" id="ham-icon"></i>
+        <a href="/index.html" class="brand-name">Velfit</a>
+      </div>
 
-          <a href="/pages/login/login.html">Login</a>
-        </div>
-      </nav>
+      <div class="navigation-ham-menu" id="navigation-ham-menu">
+        <i class="fas fa-times" id="ham-close-icon"></i>
+        <a href="/index.html">Home</a>
+        <a href="/pages/products-page/products.html">Products</a>
+        <a href="/pages/wishlist/wishlist.html">Wishlist</a>
+        <a href="/pages/cart-management/cart-management.html">Orders</a>
+        <a href="/pages/login/login.html">Logout</a>
+      </div>
+
+      <div class="nav-actions">
+        <a>
+          <span class="icon-container badge-container">
+            <i id="nav-search-icon" class="fas fa-search icon"></i>
+          </span>
+        </a>
+
+        <a href="/pages/wishlist/wishlist.html">
+          <span class="icon-container badge-container">
+            <i class="fas fa-heart icon"></i>
+            <span class="icon-badge">2</span>
+          </span>
+        </a>
+
+        <a href="/pages/cart-management/cart-management.html">
+          <span class="icon-container badge-container">
+            <i class="fas fa-shopping-cart icon"></i>
+            <span class="icon-badge">2</span>
+          </span>
+        </a>
+
+        <a href="/pages/login/login.html">Logout</a>
+      </div>
+    </nav>
   
       <!-- Navbar starts -->
   
@@ -86,7 +90,7 @@
 
         <!-- grid starts -->
 
-        <div class="products-grid">
+        <div class="grid auto-fit products-grid">
          
           <!-- card here-->
 
@@ -124,9 +128,6 @@
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-       
-                <p class="flexible-txt details">
-                Upto 50% Off</p>
                          
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -281,6 +282,6 @@
       </section>
 
 <script src="/js/homepage.js"></script>
-
+<script src="https://velocity-ui.netlify.app/components/navigation/navigation.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: max-content;
+  margin: 1.5rem;
 }
 
 .cart-container .card-actions {
@@ -30,11 +31,10 @@ body {
   background-color: var(--plain-white);
 }
 
- .card.card-horizontal .rating,
+.card.card-horizontal .rating,
 .card.card-horizontal .ecom-qty {
   margin: 1rem 0;
 }
-
 
 .card-container {
   display: flex;
@@ -98,11 +98,9 @@ li.notification:hover {
 
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
-}
 
-@media screen and (max-width: 768px) {
   .cart-container {
     flex-direction: column;
     row-gap: 4rem;

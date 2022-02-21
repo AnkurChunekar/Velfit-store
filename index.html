@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="/css/homepage.css" />
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -22,13 +22,17 @@
 
     <nav class="navigation">
       <div class="nav-brand">
-        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
-        <a href="" class="brand-name">Velfit</a>
+        <i class="fas fa-bars ham-icon" id="ham-icon"></i>
+        <a class="brand-name">Velfit</a>
       </div>
 
-      <div class="nav-link">
+      <div class="navigation-ham-menu" id="navigation-ham-menu">
+        <i class="fas fa-times" id="ham-close-icon"></i>
         <a href="/index.html">Home</a>
         <a href="/pages/products-page/products.html">Products</a>
+        <a href="/pages/wishlist/wishlist.html">Wishlist</a>
+        <a href="/pages/cart-management/cart-management.html">Orders</a>
+        <a href="/pages/login/login.html">Login</a>
       </div>
 
       <div class="nav-actions">
@@ -55,8 +59,6 @@
         <a href="/pages/login/login.html">Login</a>
       </div>
     </nav>
-
-    <!-- Navbar starts -->
 
     <!-- Search bar starts -->
 
@@ -120,7 +122,9 @@
             src="/images/category-men.webp"
             alt="Mens Category"
           />
-          <a href="/pages/products-page/products.html" class="overlay-text flex-row-center2"
+          <a
+            href="/pages/products-page/products.html"
+            class="overlay-text flex-row-center2"
             >MENS</a
           >
         </div>
@@ -130,7 +134,9 @@
             src="/images/category-women.webp"
             alt="Womens Category"
           />
-          <a href="/pages/products-page/products.html" class="overlay-text flex-row-center2"
+          <a
+            href="/pages/products-page/products.html"
+            class="overlay-text flex-row-center2"
             >WOMENS</a
           >
         </div>
@@ -140,7 +146,9 @@
             src="/images/category-equipment.webp"
             alt="Equipment Category"
           />
-          <a href="/pages/products-page/products.html" class="overlay-text flex-row-center2"
+          <a
+            href="/pages/products-page/products.html"
+            class="overlay-text flex-row-center2"
             >EQUIPMENTS</a
           >
         </div>
@@ -155,7 +163,7 @@
 
         <!-- grid starts -->
 
-        <div class="products-grid">
+        <div class="grid auto-fit products-grid">
           <!-- card here-->
 
           <div class="card single-btn">
@@ -194,10 +202,6 @@
                 <div class="ecom-qty">
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
-
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
 
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
@@ -263,10 +267,6 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
-
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -330,10 +330,6 @@
                   Quantity: <input type="number" min="1" max="50" />
                 </div>
 
-                <p class="flexible-txt details">
-                  <span class="strike-text gray-text">$1599</span> $749
-                </p>
-
                 <div class="rating sm">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -368,42 +364,46 @@
     <!-- Footer starts -->
 
     <footer class="main-footer">
-
       <ul class="flex-row-center2">
         <li>
           <a
             class="footer-link"
-            href="https://ankurchunekar.netlify.app/"
+            href="/index.html"
             target="_blank"
-            >Home</a>
+            >Home</a
+          >
         </li>
         <li>
           <a
             class="footer-link"
-            href="https://github.com/AnkurChunekar"
+            href="/pages/products-page/products.html"
             target="_blank"
-            >Products</a>
+            >Products</a
+          >
         </li>
         <li>
           <a
             class="footer-link"
-            href="https://twitter.com/ankur_chunekar"
+            href="/pages/cart-management/cart-management.html"
             target="_blank"
-            >Cart</a>
+            >Cart</a
+          >
         </li>
         <li>
           <a
             class="footer-link"
-            href="https://www.linkedin.com/in/ankurchunekar"
+            href="/pages/login/login.html"
             target="_blank"
-            >Account</a>
+            >Account</a
+          >
         </li>
         <li>
           <a
             class="footer-link"
-            href="https://www.linkedin.com/in/ankurchunekar"
+            href="/pages/login/login.html"
             target="_blank"
-            >Logout</a>
+            >Logout</a
+          >
         </li>
       </ul>
 
@@ -449,6 +449,7 @@
 
     <!-- Footer Ends -->
 
+    <script src="https://velocity-ui.netlify.app/components/navigation/navigation.js"></script>
     <script src="/js/homepage.js"></script>
   </body>
 </html>
