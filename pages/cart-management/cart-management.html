@@ -24,13 +24,14 @@
 
     <nav class="navigation">
       <div class="nav-brand">
-        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+        <i class="fas fa-bars ham-icon" id="ham-icon"></i>
         <a href="" class="brand-name">Velfit</a>
       </div>
 
-      <div class="nav-link">
-        <a href="/index.html">Home</a>
-        <a href="/pages/products-page/products.html">Products</a>
+      <div class="navigation-ham-menu" id="navigation-ham-menu">
+        <i class="fas fa-times" id="ham-close-icon"></i>
+        <a href="">Home</a>
+        <a href="">Products</a>
       </div>
 
       <div class="nav-actions">
@@ -47,7 +48,7 @@
           </span>
         </a>
 
-        <a href="">
+        <a href="/pages/cart-management/cart-management.html">
           <span class="icon-container badge-container">
             <i class="fas fa-shopping-cart icon"></i>
             <span class="icon-badge">2</span>
@@ -259,6 +260,7 @@
       </section>
     </main>
 
+    <script src="https://velocity-ui.netlify.app/components/navigation/navigation.js"></script>
     <script src="/js/homepage.js"></script>
   </body>
 </html>

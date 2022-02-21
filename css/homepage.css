@@ -1,3 +1,5 @@
+@import url(https://velocity-ui.netlify.app/components/grid/grid.css);
+
 /* Flex classes */
 
 .flex-row-center2 {
@@ -12,7 +14,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
   box-shadow: 0 1px 5px var(--plain-gray);
 }
 
@@ -202,24 +204,14 @@
 
 /* Cards */
 
-.card {
+.card,
+.card .card-actions .btn,
+.card .card-image img {
   border-radius: 0;
 }
 
-.card:hover {
-  transform: scale(1.02);
-}
 .card .card-image img {
   height: 26rem;
-  border-radius: 0;
-}
-
-.card .card-actions .btn {
-  border-radius: 0;
-}
-
-.card .card-text-content .details {
-  display: none;
 }
 
 .card .card-actions .card-btn-1 {
@@ -250,10 +242,6 @@
 /* Products Grid */
 
 .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -292,7 +280,6 @@
 }
 .main-footer li a {
   color: inherit;
-  font-size: 1.8rem;
   text-decoration: none;
 }
 .main-footer li a:hover {
