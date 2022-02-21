@@ -92,13 +92,38 @@
 
         <section class="price">
           <p class="filter-title">Price</p>
-          <div class="flex-r-center-sb">
+          <!-- <div class="flex-r-center-sb">
             <span>500</span>
             <span>2500</span>
             <span>5000</span>
           </div>
-          <input type="range" />
+          <input type="range" /> -->
+
+          <div class="slider-container">
+            <div class="slider-endpoints">
+              <span class="endpoint">0</span>
+              <span class="endpoint">5000</span>
+            </div>
+            <input type="range" min="0" max="100" value="0" id="slider" class="slider"/>
+            <p class="value">Value: <span id="slider-value"></span></p>
+          </div> 
+
         </section>
+
+<!-- 
+
+  <div class="slider-container">
+  <div class="slider-endpoints">
+    <span class="endpoint">0</span>
+    <span class="endpoint">5000</span>
+  </div>
+  <input type="range" min="0" max="100" value="0" id="slider" class="slider"/>
+  <p class="value">Value: <span id="slider-value"></span></p>
+</div> 
+
+ -->
+
+
 
         <!-- Category starts -->
 
@@ -510,6 +535,7 @@
 
     <script src="/js/homepage.js"></script>
     <script src="https://velocity-ui.netlify.app/components/navigation/navigation.js"></script>
+    <script src="https://velocity-ui.netlify.app/components/slider/slider.js"></script>
 
   </body>
 </html>
