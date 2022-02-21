@@ -128,7 +128,7 @@
 }
 
 .banner-content .title {
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
 }
 
@@ -140,6 +140,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  html {
+    font-size: 55%;
+  }
+
   .banner-content .title {
     font-size: 5rem;
   }
