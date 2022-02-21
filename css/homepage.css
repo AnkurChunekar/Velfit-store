@@ -39,6 +39,7 @@
   max-width: 300px;
   width: 100%;
   z-index: 100;
+  row-gap: 3rem;
 }
 
 .navigation-ham-menu a:hover {
@@ -138,7 +139,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
   html {
     font-size: 55%;
   }
@@ -211,6 +211,10 @@
 .card .card-actions .btn,
 .card .card-image img {
   border-radius: 0;
+}
+
+.card:hover {
+  transform: scale(1);
 }
 
 .card .card-image img {
